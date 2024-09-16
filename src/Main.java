@@ -324,7 +324,7 @@ public class Main {
               selectedEstate = estateSelectDialog(estates, "Alquilar", "Propiedades Disponibles");
               if (selectedEstate != null) {
                 selectedEstate.setRentUser(loggedUser);
-                loggedUser.addRentedBook(selectedEstate);
+                loggedUser.addRentedEstate(selectedEstate);
                 customDialog(null, "Propiedad: '" + selectedEstate.toString() + "'\nAlquilado con exito!", 1);
               }
               break;

@@ -22,7 +22,7 @@ public class User {
     return rentedEstates;
   }
 
-  public void addRentedBook(Estate newEstate) {
+  public void addRentedEstate(Estate newEstate) {
     if (this.rentedEstates == null) {
       this.rentedEstates = new Estate[1];
       this.rentedEstates[0] = newEstate;
